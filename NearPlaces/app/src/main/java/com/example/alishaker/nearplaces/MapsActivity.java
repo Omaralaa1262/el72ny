@@ -56,6 +56,21 @@ public class MapsActivity extends FragmentActivity implements
    // private String url;
 
 
+
+    public void drawMarkersOfLocations(String um,double la, double lo)
+    {
+        LatLng LATLNG = new LatLng(la,lo);
+        Marker shopLocationMarker;
+        MarkerOptions markerOptionsForShop = new MarkerOptions();
+        markerOptionsForShop.position(LATLNG);
+        markerOptionsForShop.title(um);
+        markerOptionsForShop.snippet("بيانات مالك المحل");
+        markerOptionsForShop.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ROSE));
+        shopLocationMarker = mMap.addMarker(markerOptionsForShop);
+
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -134,21 +149,17 @@ public class MapsActivity extends FragmentActivity implements
 
 
             case R.id.mechanic_nearby:
-                try
-                {
+                try {
                     mMap.clear();
                     String url1 = getUrl(latitude, longtude, Mechanic);
                     transferData[0] = mMap;
                     transferData[1] = url1;
-                    Toast.makeText(this,url1 , Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, url1, Toast.LENGTH_LONG).show();
                     Toast.makeText(this, "Searching for Nearby Mechanics...", Toast.LENGTH_SHORT).show();
                     Toast.makeText(this, "Showing Nearby Mechanics...", Toast.LENGTH_SHORT).show();
+                }
 
-<<<<<<< HEAD
-=======
-
-                getNearbyPlaces.execute(transferData);}
->>>>>>> c0cc58f75c0a20bb3b4f10858cde1b104788562d
+                    //getNearbyPlaces.execute(transferData);
                 catch (Exception e)
                 {
                     Toast.makeText(this, "Ay 7aga", Toast.LENGTH_SHORT).show();
