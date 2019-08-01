@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1040577437830",
+    "firebase_url": "https://nearplaces-fbae5.firebaseio.com",
+    "project_id": "nearplaces-fbae5",
+    "storage_bucket": "nearplaces-fbae5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040577437830:android:5238091d9f48cdbe",
+        "android_client_info": {
+          "package_name": "com.example.alishaker.nearplaces"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1040577437830-frfega2ff4gi5gta7te9fvmkam0mke5t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alishaker.nearplaces",
+            "certificate_hash": "417ebc6b0e57efc0defc29fe102338e2ea2239b0"
+          }
+        },
+        {
+          "client_id": "1040577437830-hqsnk2fhri9otvfs8rnrmlcvjo238qus.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGrp9S79vSN3fBlk3MqyiM38z42yhp8kc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1040577437830-hqsnk2fhri9otvfs8rnrmlcvjo238qus.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
