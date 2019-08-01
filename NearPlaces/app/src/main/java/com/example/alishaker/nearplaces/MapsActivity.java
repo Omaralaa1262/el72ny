@@ -134,7 +134,8 @@ public class MapsActivity extends FragmentActivity implements
 
 
             case R.id.mechanic_nearby:
-                try {
+                try
+                {
                     mMap.clear();
                     String url1 = getUrl(latitude, longtude, Mechanic);
                     transferData[0] = mMap;
@@ -144,12 +145,12 @@ public class MapsActivity extends FragmentActivity implements
                     Toast.makeText(this, "Showing Nearby Mechanics...", Toast.LENGTH_SHORT).show();
                 }
 
-                getNearbyPlaces.execute(transferData);
                 catch (Exception e)
                 {
                     Toast.makeText(this, "Ay 7aga", Toast.LENGTH_SHORT).show();
                 }
                 break;
+            //getNearbyPlaces.execute(transferData);
 
             /*case R.id.wheels_nearby:
                 try {
