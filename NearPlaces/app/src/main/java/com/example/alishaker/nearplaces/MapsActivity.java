@@ -143,8 +143,12 @@ public class MapsActivity extends FragmentActivity implements
                     Toast.makeText(this,url1 , Toast.LENGTH_LONG).show();
                     Toast.makeText(this, "Searching for Nearby Mechanics...", Toast.LENGTH_SHORT).show();
                     Toast.makeText(this, "Showing Nearby Mechanics...", Toast.LENGTH_SHORT).show();
-                }
 
+<<<<<<< HEAD
+=======
+
+                getNearbyPlaces.execute(transferData);}
+>>>>>>> c0cc58f75c0a20bb3b4f10858cde1b104788562d
                 catch (Exception e)
                 {
                     Toast.makeText(this, "Ay 7aga", Toast.LENGTH_SHORT).show();
